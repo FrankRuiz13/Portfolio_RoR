@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  route 'portfolio#home'
+  root 'portfolio#home'
   get 'portfolio/resume'
   get 'portfolio/projects'
   get 'portfolio/certificates'
