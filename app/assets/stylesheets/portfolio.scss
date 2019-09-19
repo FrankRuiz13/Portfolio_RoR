@@ -200,8 +200,18 @@ $portfolio-resume-spacing: 2rem;
 }
 
 
+.column {
+  text-align: center;
+}
+
+
+.thumbnail {
+  background: slategray;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
 
 footer {
+  margin-top: 5%;
   background: whitesmoke;
   text-align: center;
   box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3);
