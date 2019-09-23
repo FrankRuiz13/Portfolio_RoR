@@ -5,6 +5,8 @@
 @import "foundation_and_overrides";
 @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
 
+
+
 $subnav-hero-bg: $primary-color;
 $subnav-hero-link-padding: 0.9rem 1rem;
 $subnav-hero-font-size: 1rem;
@@ -12,16 +14,22 @@ $subnav-hero-link-opacity: 0.15;
 $subnav-hero-height: 40vh;
 $subnav-hero-transition: all 0.35s ease-in-out;
 
-$social-brand-facebook: #3b5998;
-$social-brand-twitter: #55acee;
-$social-brand-linkedin: #007bb5;
 $about-the-author-text-transform: uppercase;
 $about-the-author-separator-width: 5rem;
 $about-the-author-separator-thickness: 0.125rem;
 
 $portfolio-resume-spacing: 2rem;
 
-
+$social-button-size: 3.125rem;
+$social-button-border-width: 0.125rem;
+$social-button-font-size: 1.5625rem;
+$social-button-line-height: 2em;
+$social-button-border-radius: 1.6875rem;
+$social-button-transition: all 0.5s ease;
+$social-button-margin: 0.25rem;
+$social-brand-twitter: #000000;
+$social-brand-linkedin: #000000;
+$social-brand-github: #000000;
 
 
 * {
@@ -86,7 +94,7 @@ $portfolio-resume-spacing: 2rem;
 }
 
 
-// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+
 
 
 .about-the-author {
@@ -110,42 +118,6 @@ $portfolio-resume-spacing: 2rem;
     text-transform: $about-the-author-text-transform;
   }
 
-  .author-social {
-    text-align: center;
-    margin-top: 0.7rem;
-    margin-bottom: 0.7rem;
-
-    .fa-stack {
-      display: inline-block;
-
-      &.facebook {
-        color: lighten($social-brand-facebook, 10%);
-
-        &:hover,
-        &:focus {
-          color: $social-brand-facebook;
-        }
-      }
-
-      &.twitter {
-        color: lighten($social-brand-twitter, 10%);
-
-        &:hover,
-        &:focus {
-          color: $social-brand-twitter;
-        }
-      }
-
-      &.linkedin {
-        color: lighten($social-brand-linkedin, 10%);
-
-        &:hover,
-        &:focus {
-          color: $social-brand-linkedin;
-        }
-      }
-    }
-  }
 
   .author-image {
   background: black;
@@ -202,18 +174,82 @@ $portfolio-resume-spacing: 2rem;
 
 .column {
   text-align: center;
+
+  .thumbnail {
+    background: slategray;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  }
 }
 
 
-.thumbnail {
-  background: slategray;
-  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+
+
+
+@mixin social-button($brand-color, $brand-icon) {
+  background: $brand-color;
+
+  &:before {
+    font-family: "FontAwesome";
+    content: $brand-icon;
+  }
+  &:hover,
+  &:focus {
+    color: $brand-color;
+    background: $white;
+    border-color: $brand-color;
+  }
 }
+
+.rounded-social-buttons {
+  text-align: center;
+
+  .social-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: $social-button-size;
+    height: $social-button-size;
+    border: $social-button-border-width solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: $white;
+    font-size: $social-button-font-size;
+    font-weight: normal;
+    line-height: $social-button-line-height;
+    border-radius: $social-button-border-radius;
+    transition: $social-button-transition;
+    margin-right: $social-button-margin;
+    margin-bottom: $social-button-margin;
+
+    &:hover,
+    &:focus {
+      transform: rotate(360deg);
+    }
+
+    &.twitter {
+      @include social-button($social-brand-twitter, "\f099")
+    }
+
+    &.linkedin {
+      @include social-button($social-brand-linkedin, "\f0e1")
+    }
+
+    &.github {
+      @include social-button($social-brand-github, "\f09b")
+    }
+  }
+}
+
+
+
+
 
 footer {
   margin-top: 5%;
   background: whitesmoke;
   text-align: center;
   box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.3);
+
 }
 
