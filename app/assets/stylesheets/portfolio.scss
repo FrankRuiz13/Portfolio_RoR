@@ -3,11 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import "foundation_and_overrides";
-@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display:400,600&display=swap');
 
 $subnav-hero-bg: $primary-color;
 $subnav-hero-link-padding: 0.9rem 1rem;
-$subnav-hero-font-size: 1rem;
+$subnav-hero-font-size: 1.5rem;
 $subnav-hero-link-opacity: 0.15;
 $subnav-hero-height: 45vh;
 $subnav-hero-transition: all 0.35s ease-in-out;
@@ -18,7 +18,7 @@ $portfolio-resume-spacing: 2rem;
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Big Shoulders Display', cursive;
 }
 
 .subnav-hero-section {
@@ -59,10 +59,11 @@ $portfolio-resume-spacing: 2rem;
     a {
       padding: $subnav-hero-link-padding;
       font-size: $subnav-hero-font-size;
+      font-weight: 600;
       color: $white;
       text-transform: uppercase;
       display: block;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       transition: $subnav-hero-transition;
 
       &.is-active {
@@ -78,14 +79,9 @@ $portfolio-resume-spacing: 2rem;
 
 
 hr {
-  border: 1px solid black;
-  box-shadow: 2px 2px 7px black;
+  border: 1px dotted black;
+  box-shadow: 3px 3px 8px black;
 }
-
-
-
-
-
 
 
 .portfolio-resume-spacing {
@@ -133,9 +129,15 @@ hr {
   }
 }
 
+
+.logo {
+  width: 1.7em;
+  height: 1.7em;
+  border-radius: 45%;
+}
 .social-footer {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
