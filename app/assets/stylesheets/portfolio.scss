@@ -140,6 +140,41 @@ hr {
   height: 1.7em;
   border-radius: 45%;
 }
+
+form {
+  .form-icons {
+    text-align: center;
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    .input-group-label {
+      background-color: black;
+      border-color: black;
+    }
+
+    .input-group-field {
+      border-color: black;
+    }
+
+    .fa {
+      color: white;
+      width: 1rem; // makes the width of icon labels equal
+    }
+  }
+}
+
+#submit-button {
+  background: whitesmoke;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bolder;
+  text-transform: capitalize;
+  letter-spacing: -1px; 
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
+}
+
 .social-footer {
   padding: 1rem;
   background: rgba(0, 0, 0, 0.7);
