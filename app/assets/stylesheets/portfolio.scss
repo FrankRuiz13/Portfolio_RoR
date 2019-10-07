@@ -77,14 +77,15 @@ $portfolio-resume-spacing: 2rem;
   }
 }
 
-.banner ~ h1 {
-  font-family: inherit;
+.project-header {
+  margin-bottom: 10px;
   font-size: 3rem;
   font-style: italic;
+  text-align: center;
   text-transform: capitalize;
-  letter-spacing: -1px;
-
 }
+
+
 
 hr {
   border: 1px dotted black;
