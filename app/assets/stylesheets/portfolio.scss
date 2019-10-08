@@ -14,6 +14,10 @@ $subnav-hero-transition: all 0.35s ease-in-out;
 
 $portfolio-resume-spacing: 2rem;
 
+$about-the-author-text-transform: uppercase;
+$about-the-author-separator-width: 5rem;
+$about-the-author-separator-thickness: 0.125rem;
+
 
 * {
   margin: 0;
@@ -23,9 +27,9 @@ $portfolio-resume-spacing: 2rem;
 
 .subnav-hero-section {
   text-align: center;
-  background: asset-url("girl.jpg");
+  background: asset-url("suit.jpg");
   background-size: cover;
-  background-position: top 60% left 30%;
+  background-position: top 50% left 30%;
   position: relative;
   overflow: visible;
   display: flex;
@@ -200,9 +204,57 @@ form {
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.7);
 }
 
+.card-container {
+  margin: 200px;
+}
+
+// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
+
+
+
+
+.about-the-author {
+  background-color: $white;
+  padding: 1rem;
+  border: 1px solid $medium-gray;
+  box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.5);
+  text-align: center; 
+
+  .separator-left {
+    text-align: left;
+    @include clearfix;
+
+    &::after {
+      position: relative;
+      width: $about-the-author-separator-width;
+      border-bottom: $about-the-author-separator-thickness solid $primary-color;
+      margin: 0.3rem auto 0;
+      margin-left: 0;
+    }
+  }
+
+  .author-title {
+    text-transform: $about-the-author-text-transform;
+  }
+
+
+
+  .author-image {
+    border: 1px solid $medium-gray;
+  }
+}
+
+
+
+
+
+
+
+
+
 .social-footer {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: black;
   box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
