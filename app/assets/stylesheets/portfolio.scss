@@ -232,10 +232,6 @@ form {
   margin: 200px;
 }
 
-// Source: https://designpieces.com/2012/12/social-media-colours-hex-and-rgb/
-
-
-
 
 .about-the-author {
   background: linear-gradient(-130deg, rgba(128, 0, 0, 1.0) 10%, black 20%, white 70%);
@@ -261,24 +257,16 @@ form {
     text-transform: $about-the-author-text-transform;
   }
 
-
-
   .author-image {
     border: 1px solid $medium-gray;
   }
 }
-
 
 blockquote {
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 400;
 }
-
-
-
-
-
 
 .social-footer {
   padding: 1rem;
@@ -306,26 +294,34 @@ blockquote {
 }
 
 @media only screen and (max-width: 375px) {
-  .card-container {
-    margin: 10%;
-    width: 50%;
-    height: 50%;
-  }
-}
 
-@media only screen and (max-width: 414px) {
   .card-container {
-    margin: 10%;
-    width: 50%;
-    height: 50%;
+    margin: 5%;
+    width: 40%;
+    height: 40%;
   }
-}
+ .about-the-author {
+   background: white;
+ }
 
+ blockquote {
+   color: black;
+ }
+}
 
 @media only screen and (max-width: 600px) {
+
   .card-container {
-    margin: 10%;
-    width: 50%;
-    height: 50%;
+    margin: 5%;
+    width: 40%;
+    height: 40%;
+  }
+
+  .about-the-author {
+    background: white;
+  }
+
+  blockquote {
+    color: black;
   }
 }
