@@ -238,7 +238,7 @@ form {
 
 
 .about-the-author {
-  background-color: $white;
+  background: linear-gradient(-130deg, rgba(128, 0, 0, 1.0) 10%, black 20%, white 70%);
   padding: 1rem;
   border: 1px solid $medium-gray;
   box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.5);
@@ -269,7 +269,11 @@ form {
 }
 
 
-
+blockquote {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+}
 
 
 
