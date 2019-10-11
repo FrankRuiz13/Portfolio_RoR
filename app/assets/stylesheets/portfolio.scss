@@ -106,7 +106,12 @@ $about-the-author-separator-thickness: 0.125rem;
 .solo {
   filter: grayscale(75%);
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+}
 
+.setup-pic {
+  border-radius: 0 1rem 1rem 1rem;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
 }
 
 hr {
@@ -126,7 +131,6 @@ hr {
 .portfolio-resume-headshot {
   margin-bottom: 2rem;
   border-radius: 50%;
-  filter: sepia(50%) grayscale(50%);
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
 
