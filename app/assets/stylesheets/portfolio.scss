@@ -81,6 +81,8 @@ $about-the-author-separator-thickness: 0.125rem;
   }
 }
 
+
+
 .home-header {
   font-size: 3.5rem;
   font-style: oblique;
@@ -124,6 +126,8 @@ hr {
 .portfolio-resume-headshot {
   margin-bottom: 2rem;
   border-radius: 50%;
+  filter: sepia(50%) grayscale(50%);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 }
 
 .portfolio-resume-header {
