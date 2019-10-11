@@ -101,7 +101,11 @@ $about-the-author-separator-thickness: 0.125rem;
   text-transform: capitalize;
 }
 
+.solo {
+  filter: grayscale(80%);
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.5);
 
+}
 
 hr {
   border: 1px dotted black;
